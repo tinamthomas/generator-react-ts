@@ -2,10 +2,13 @@ var Generator = require('yeoman-generator');
 
 module.exports = class extends Generator {
     method1() {
-        this.log('method 1 just ran');
+        this.log('Starting to generate code');
     }
 
-    method2() {
-        this.log('method 2 just ran');
+    writing() {
+        this.fs.copyTpl(
+            this.templatePath('app'),
+            this.destinationPath('.')
+        );
     }
 };
