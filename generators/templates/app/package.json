@@ -1,8 +1,9 @@
 {
-  "name": "ActivityTracker",
+  "name": "<%= name %>",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Tina M.T.",
+  "author": "<%= author %>",
+  "description": "<%= description %>",
   "license": "MIT",
   "scripts": {
     "start:dev": "webpack-dev-server --content-base src --hot --inline"
