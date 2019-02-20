@@ -30,5 +30,10 @@ module.exports = class extends Generator {
                 author: this.answers.author,
             }
         );
+        // Copy all dotfiles
+        this.fs.copy(
+          this.templatePath('app/.*'),
+          this.destinationPath('.')
+        );
     }
 };
