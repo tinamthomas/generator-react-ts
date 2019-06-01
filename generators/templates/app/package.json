@@ -1,13 +1,14 @@
 {
   "name": "<%= name %>",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "author": "<%= author %>",
   "description": "<%= description %>",
   "license": "MIT",
   "scripts": {
     "start:dev": "webpack-dev-server --content-base src --hot --inline",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "engines": {
     "node": "10.5.0"
