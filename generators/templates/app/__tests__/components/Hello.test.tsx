@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Hello from '../../src/components/Hello';
+import Hello from '../../src/client/components/Hello';
 
 import {shallow} from 'enzyme';
 

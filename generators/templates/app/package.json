@@ -6,9 +6,10 @@
   "description": "<%= description %>",
   "license": "MIT",
   "scripts": {
-    "start:dev": "webpack-dev-server --content-base src --hot --inline",
+    "start:webpack-dev": "webpack-dev-server --content-base src/client --hot --inline",
     "test": "jest",
-    "build": "webpack"
+    "build": "webpack",
+    "start:dev": "yarn build && ts-node src/server/index.tsx"
   },
   "engines": {
     "node": "10.5.0"
@@ -32,10 +33,12 @@
     "@types/react": "^16.4.1",
     "@types/react-dom": "^16.0.6",
     "contextify": "^1.0.0",
+    "express": "^4.17.1",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "ts-node": "^8.2.0",
     "webpack-dev-server": "^3.1.4"
   },
   "jest": {
